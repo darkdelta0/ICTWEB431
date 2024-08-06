@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("../images/stage.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+h1 {
+  text-align: center;  
+  
+}
+
+
+p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #c3d100;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+li {
+  float: left;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;  
+  font-family: Arial;
+}
+li.b {
+  float:right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;  
+  font-family: Arial;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+h1{
+  color: rgb(2, 221, 141);
+}
+
+
+p1{
+  color: #c3d100;
+  text-align: center;
+}
+
+
+
+img {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* if on phone (i.e. screen width < 800px) */
+.column {
+  width: 100%;
+  padding: 5px;
+}
+
+/* else */ 
+@media screen and (min-width: 800px) {
+  .column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+}
+
+form {
+  text-align: center;  
+  
+}
+
+label{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+footer{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;  
+  font-family: Arial;  
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color:white;
+  text-align: center;
+}
